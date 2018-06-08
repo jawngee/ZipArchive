@@ -30,7 +30,7 @@
 		C908A95F160AC26D000395DB /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E8EBE8124F3D030047C862 /* mztools.h */; };
 		C908A960160AC26D000395DB /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E8EBEA124F3D030047C862 /* unzip.h */; };
 		C908A961160AC26D000395DB /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E8EBEC124F3D030047C862 /* zip.h */; };
-		C908A962160AC26D000395DB /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E8EBF7124F3D170047C862 /* ZipArchive.h */; settings = {ATTRIBUTES = (); }; };
+		C908A962160AC26D000395DB /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E8EBF7124F3D170047C862 /* ZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C908A964160AC26D000395DB /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = C9E8EBE4124F3D030047C862 /* ioapi.c */; };
 		C908A965160AC26D000395DB /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = C9E8EBE7124F3D030047C862 /* mztools.c */; };
 		C908A966160AC26D000395DB /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = C9E8EBE9124F3D030047C862 /* unzip.c */; };
@@ -59,7 +59,7 @@
 		C9E8EBF4124F3D030047C862 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E8EBEA124F3D030047C862 /* unzip.h */; };
 		C9E8EBF5124F3D030047C862 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = C9E8EBEB124F3D030047C862 /* zip.c */; };
 		C9E8EBF6124F3D030047C862 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E8EBEC124F3D030047C862 /* zip.h */; };
-		C9E8EBF9124F3D170047C862 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E8EBF7124F3D170047C862 /* ZipArchive.h */; settings = {ATTRIBUTES = (); }; };
+		C9E8EBF9124F3D170047C862 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E8EBF7124F3D170047C862 /* ZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9E8EBFA124F3D170047C862 /* ZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E8EBF8124F3D170047C862 /* ZipArchive.m */; };
 /* End PBXBuildFile section */
 
@@ -121,7 +121,6 @@
 		C99D6912164BCC7E00B6A7C3 /* tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tests.h; sourceTree = "<group>"; };
 		C99D6913164BCC7E00B6A7C3 /* tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tests.m; sourceTree = "<group>"; };
 		C99D6915164BCC7E00B6A7C3 /* tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tests-Prefix.pch"; sourceTree = "<group>"; };
-		C99D691F164BCCF000B6A7C3 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
 		C9E8EBDB124F3CD70047C862 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		C9E8EBE3124F3D030047C862 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
 		C9E8EBE4124F3D030047C862 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
@@ -135,6 +134,7 @@
 		C9E8EBF7124F3D170047C862 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipArchive.h; path = ../ZipArchive.h; sourceTree = "<group>"; };
 		C9E8EBF8124F3D170047C862 /* ZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZipArchive.m; path = ../ZipArchive.m; sourceTree = "<group>"; };
 		D2AAC07E0554694100DB518D /* libZipArchive-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libZipArchive-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF67001320CA818A00E98699 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,7 +194,6 @@
 		0867D691FE84028FC02AAC07 /* ZipArchive */ = {
 			isa = PBXGroup;
 			children = (
-				C99D691F164BCCF000B6A7C3 /* libz.dylib */,
 				08FB77AEFE84172EC02AAC07 /* Source */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				C99D690C164BCC7E00B6A7C3 /* Common Tests */,
@@ -209,6 +208,7 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FF67001320CA818A00E98699 /* libz.tbd */,
 				C95AB36E17E1C44200120861 /* libz.dylib */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 				C9E8EBDB124F3CD70047C862 /* libz.dylib */,
@@ -443,7 +443,7 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0920;
 				TargetAttributes = {
 					C95AB35717E1C37700120861 = {
 						TestTargetID = D2AAC07D0554694100DB518D;
@@ -603,7 +603,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ZipArchive_Prefix.pch;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "ZipArchive-ios";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -619,7 +619,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ZipArchive_Prefix.pch;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "ZipArchive-ios";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -629,11 +629,34 @@
 		1DEB922308733DC00010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = "";
 				ONLY_ACTIVE_ARCH = YES;
@@ -644,9 +667,31 @@
 		1DEB922408733DC00010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = "";
 				OTHER_LDFLAGS = "-ObjC";
@@ -723,8 +768,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "ZipArchive ios Tests/ZipArchive ios Tests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "au.org.CocoaHeads.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = xctest;
@@ -763,7 +809,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "ZipArchive ios Tests/ZipArchive ios Tests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "au.org.CocoaHeads.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -810,6 +857,7 @@
 				INFOPLIST_FILE = "ZipArchive mac Tests/ZipArchive mac Tests-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = "";
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "au.org.CocoaHeads.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = xctest;
@@ -849,6 +897,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "ZipArchive mac Tests/ZipArchive mac Tests-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.org.CocoaHeads.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = xctest;
